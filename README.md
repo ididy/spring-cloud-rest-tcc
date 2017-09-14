@@ -202,6 +202,8 @@ TCC资源协调器，其职责如下：
 127.0.0.1 zipkin_server
 127.0.0.1 solar_mysql
 127.0.0.1 gitlab
+127.0.0.1 config-server
+127.0.0.1 config_server
 ```
 
 根据依赖关系，程序最好按照以下的顺序执行
