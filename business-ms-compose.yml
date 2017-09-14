@@ -9,6 +9,7 @@ services:
         environment:
             - TZ=Asia/Shanghai
     account:
+        hostname: account
         build: ./account-ms
         image: prontera/account-ms
         ports:
@@ -24,6 +25,7 @@ services:
         environment:
             - TZ=Asia/Shanghai
     order:
+        hostname: order
         build: ./order-ms
         image: prontera/order-ms
         ports:
@@ -39,6 +41,7 @@ services:
         environment:
             - TZ=Asia/Shanghai
     product:
+        hostname: product
         build: ./product-ms
         image: prontera/product-ms
         ports:
@@ -54,6 +57,7 @@ services:
         environment:
             - TZ=Asia/Shanghai
     tcc_coordinator:
+        hostname: tcc_coordinator
         build: ./tcc-coordinator-ms
         image: prontera/tcc-coordinator-ms
         ports:
@@ -69,6 +73,7 @@ services:
         environment:
             - TZ=Asia/Shanghai
     membership:
+        hostname: membership
         build: ./membership-ms
         image: prontera/membership-ms
         ports:

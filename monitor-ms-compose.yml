@@ -9,6 +9,7 @@ services:
         environment:
             - TZ=Asia/Shanghai
     gateway:
+        hostname: gateway
         build: ./api-gateway-ms
         image: prontera/gateway-ms
         ports:
@@ -19,6 +20,7 @@ services:
         environment:
             - TZ=Asia/Shanghai
     hystrix_dashboard:
+        hostname: hystrix_dashboard
         build: ./hystrix-dashboard-ms
         image: prontera/hystrix-dashboard-ms
         ports:
@@ -29,6 +31,7 @@ services:
         environment:
             - TZ=Asia/Shanghai
     spring_boot_admin:
+        hostname: spring_boot_admin
         build: ./spring-boot-admin-ms
         image: prontera/spring-boot-admin-ms
         ports:
@@ -39,6 +42,7 @@ services:
         environment:
             - TZ=Asia/Shanghai
     zipkin_server:
+        hostname: zipkin_server
         build: ./zipkin-ms
         image: prontera/zipkin-ms
         ports:

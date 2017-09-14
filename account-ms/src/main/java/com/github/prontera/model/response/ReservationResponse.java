@@ -2,7 +2,6 @@ package com.github.prontera.model.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.github.prontera.model.Participant;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.EqualsAndHashCode;

@@ -9,6 +9,7 @@ services:
         environment:
             - TZ=Asia/Shanghai
     eureka1:
+        hostname: eureka1
         build: ./eureka-registry-ms
         image: prontera/eureka-registry-ms
         ports:
@@ -20,6 +21,7 @@ services:
             - TZ=Asia/Shanghai
         command: "--spring.profiles.active=peer1"
     eureka2:
+        hostname: eureka2
         build: ./eureka-registry-ms
         image: prontera/eureka-registry-ms
         ports:
@@ -31,6 +33,7 @@ services:
             - TZ=Asia/Shanghai
         command: "--spring.profiles.active=peer2"
     config_server:
+        hostname: config-server
         build: ./config-ms
         image: prontera/config-server-ms
         ports:
