@@ -19,35 +19,35 @@ services:
             - 'jce_java'
         environment:
             - TZ=Asia/Shanghai
-    hystrix_dashboard:
-        hostname: hystrix_dashboard
-        build: ./hystrix-dashboard-ms
-        image: prontera/hystrix-dashboard-ms
-        ports:
-            - "8193:8193"
-            - "7104:7104"
-        depends_on:
-            - 'jce_java'
-        environment:
-            - TZ=Asia/Shanghai
-    spring_boot_admin:
-        hostname: spring_boot_admin
-        build: ./spring-boot-admin-ms
-        image: prontera/spring-boot-admin-ms
-        ports:
-            - "7020:7020"
-            - "9218:9218"
-        depends_on:
-            - 'jce_java'
-        environment:
-            - TZ=Asia/Shanghai
-    zipkin_server:
-        hostname: zipkin_server
-        build: ./zipkin-ms
-        image: prontera/zipkin-ms
-        ports:
-            - "9411:9411"
-        depends_on:
-            - 'jce_java'
-        environment:
-            - TZ=Asia/Shanghai
+#    hystrix_dashboard:
+#        hostname: hystrix_dashboard
+#        build: ./hystrix-dashboard-ms
+#        image: prontera/hystrix-dashboard-ms
+#        ports:
+#            - "8193:8193"
+#            - "7104:7104"
+#        depends_on:
+#            - 'jce_java'
+#        environment:
+#            - TZ=Asia/Shanghai
+#    spring_boot_admin:
+#        hostname: spring_boot_admin
+#        build: ./spring-boot-admin-ms
+#        image: prontera/spring-boot-admin-ms
+#        ports:
+#            - "7020:7020"
+#            - "9218:9218"
+#        depends_on:
+#            - 'jce_java'
+#        environment:
+#            - TZ=Asia/Shanghai
+#    zipkin_server:
+#        hostname: zipkin_server
+#        build: ./zipkin-ms
+#        image: prontera/zipkin-ms
+#        ports:
+#            - "9411:9411"
+#        depends_on:
+#            - 'jce_java'
+#        environment:
+#            - TZ=Asia/Shanghai
